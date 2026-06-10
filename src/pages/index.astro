@@ -5,6 +5,7 @@ import { NAME, USERNAME } from "../layouts/layout.astro";
 
 <Layout title={NAME}>
   <main>
+    <!-- hero/intro section -->
     <section>
       <h1 style="color: var(--accent);" class="h0">{NAME}</h1>
       <p>
@@ -17,14 +18,13 @@ import { NAME, USERNAME } from "../layouts/layout.astro";
         whenever i get the chance!
       </p>
       <p>
-        this website is where i'll eventually showcase the work i'm proud of
-        (once i actually finish some), and share projects and people i find
-        cool! feel free to take a look around! i think you'll find some really
-        lovely stuff!
+        this website is where i'll showcase the work i'm proud of, and share
+        projects and people i find cool! feel free to take a look around!
       </p>
       <hr />
     </section>
 
+    <!-- about me section -->
     <section>
       <h2>about me</h2>
       <p>
@@ -42,40 +42,61 @@ import { NAME, USERNAME } from "../layouts/layout.astro";
       <hr />
     </section>
 
+    <!-- current work section -->
     <section>
-      <h2>what i've done</h2>
-      <p>some things i've worked on in the past</p>
-      <h3><a href="https://buildtheearth.net">BuildTheEarth.net</a></h3>
-      <p>
-        a project that aims to recreate the Earth in Minecraft. the main project
-        is a Guinness World Record holder for the largest Minecraft project in
-        the world!
-      </p>
-      <ul>
-        <li>
-          <strong>Middle East Team</strong> — i worked as the system administrator
-          for the minecraft server and now i oversee the middle eastern team as a
-          manager.
-        </li>
-        <li>
-          <strong>Support Staff</strong> — volunteered as support staff from 2020
-          to 2023, helping users with technical issues.
-        </li>
-      </ul>
-      <h3><a href="https://github.com/Avdan-OS/">AvdanOS</a></h3>
-      <p>a Linux desktop environment project based on a concept by Avdan.</p>
-      <ul>
-        <li>
-          <strong>UI Designer</strong> — worked from 2022 to 2023 creating UI mockups
-          and design systems for the desktop
-        </li>
-      </ul>
+      <h2>what i'm working on now</h2>
+      <p>current projects</p>
+      <div class="card-grid large">
+        <a href="https://github.com/fuwaflow/usagi" class="card">
+          <img
+            class="card-image"
+            src="https://raw.githubusercontent.com/fuwaflow/usagi/main/.github/assets/banner.png"
+            alt="usagi linux distro pantheon desktop"
+          />
+          <h3 class="card-title">usagi</h3>
+          <p class="card-description">fedora atomic image with pantheon!</p>
+        </a>
+      </div>
       <hr />
     </section>
 
+    <!-- past experience section -->
     <section>
-      <h2>cool projects</h2>
-      <p>here are some great projects that i love and/or work with:</p>
+      <h2>past experience</h2>
+      <p>things i've worked on and learned from</p>
+      <div class="card-grid large">
+        <a href="https://buildtheearth.net" class="card">
+          <img
+            class="card-image"
+            src="https://cdn.buildtheearth.net/uploads/6be3d752b5556540625c4df4f8b8db643745d239bc3fa71213818e34f3b677bf"
+            alt="buildtheearth minecraft project"
+          />
+          <h3 class="card-title">BuildTheEarth.net</h3>
+          <p class="card-description">
+            guinness world record minecraft project. i was a team manager &
+            system admin.
+          </p>
+        </a>
+        <a href="https://github.com/Avdan-OS/" class="card">
+          <img
+            class="card-image"
+            src="https://avdanos.org/_next/static/media/preview1.c0dcd8fd.jpg"
+            alt="avdanos linux desktop environment"
+          />
+          <h3 class="card-title">AvdanOS</h3>
+          <p class="card-description">
+            linux desktop environment ui designer. i made mockups & design
+            systems (2022–2023).
+          </p>
+        </a>
+      </div>
+      <hr />
+    </section>
+
+    <!-- cool projects section -->
+    <section>
+      <h2>projects i love</h2>
+      <p>ecosystem & tools i'm passionate about:</p>
       <div class="card-grid large">
         <a href="https://elementary.io/" class="card">
           <img
@@ -114,12 +135,10 @@ import { NAME, USERNAME } from "../layouts/layout.astro";
       <hr />
     </section>
 
+    <!-- cool people section -->
     <section>
       <h2>cool people</h2>
-      <p>
-        here are some really talented people i admire and love collaborating
-        with:
-      </p>
+      <p>really talented people i admire and love collaborating with:</p>
       <div class="card-grid">
         <a href="https://fizzyizzy05.dev/" class="card horizontal">
           <img
@@ -181,6 +200,7 @@ import { NAME, USERNAME } from "../layouts/layout.astro";
       <hr />
     </section>
 
+    <!-- find me section -->
     <section>
       <h2>find me</h2>
       <ul>
@@ -194,6 +214,6 @@ import { NAME, USERNAME } from "../layouts/layout.astro";
       <hr />
     </section>
 
-    <p>thanks for visiting!</p>
+    <p>thanks for visiting!! ❤️</p>
   </main>
 </Layout>
